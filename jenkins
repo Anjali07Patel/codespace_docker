@@ -1,7 +1,9 @@
 docker pull jenkins/jenkins:lts
 docker run -d -p 8080:8080 -p 50000:50000 --name test-jenkins jenkins/jenkins:lts
--d: Run the container in detached mode (in the background).
+
+
+##"-d: Run the container in detached mode (in the background).
 -p 8080:8080: Map port 8080 on the host to port 8080 in the container (used for accessing Jenkins UI).
 -p 50000:50000: Map port 50000 on the host to port 50000 in the container (used for Jenkins agents).
 --name myjenkins: Assign the name myjenkins to the container.
-jenkins/jenkins:lts: Specify the image and tag to use for the container.
+jenkins/jenkins:lts: Specify the image and tag to use for the container."##
